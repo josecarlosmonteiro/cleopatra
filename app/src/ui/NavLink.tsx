@@ -11,7 +11,8 @@ export function NavLink({ href, className, children }: Props) {
       href={href}
       className={`
         ${className}
-        border-b-2 border-b-white
+        border-b border-b-transparent
+        hover:border-b-white hover:pb-1
         duration-200
       `}
     >
