@@ -22,7 +22,7 @@ const Navlink = ({ link }: { link: LinkProps }) => {
 
 export function Sidenav() {
   return (
-    <nav className="h-screen min-w-60 py-4 flex flex-col items-center bg-dark-medium bg-opacity-30">
+    <nav className="h-screen min-w-60 py-4 flex flex-col items-center bg-dark-medium">
       <Link href={'/'}>
         <h2 className="text-4xl text-center font-semibold font-['Papyrus'] text-yellow-500">
           Cleo

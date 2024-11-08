@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -14,9 +15,11 @@ const config: Config = {
         secondary: "#c9aa42",
         dark: {
           light: "#333333",
-          medium: "#1A1A1A",
+          medium: "#252525",
           strong: "#000000"
-        }
+        },
+        revenue: colors.emerald[500],
+        expense: colors.red[500],
       },
     },
   },
