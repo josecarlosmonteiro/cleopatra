@@ -1,8 +1,13 @@
 import { Flex } from "@/app/components/ui/align/Flex";
 import { Paper } from "@/app/components/ui/data/Paper";
+import { Table } from "@/app/components/ui/data/Table";
 import { currency } from "@/app/utils/formats";
+import { columns, data } from "./mock";
 
 export default function MonthlyPlannerPage() {
+
+  // TODO: implementar formulário para adicionar lançamentos mensais
+
   return (
     <div className="p-4">
       <div className="grid grid-cols-2 gap-8 text-xl">
@@ -21,9 +26,9 @@ export default function MonthlyPlannerPage() {
             </Flex>
           </Paper>
 
-          <div className="p-4 rounded-lg bg-dark-medium">
-            table...
-          </div>
+          <Paper>
+            <Table columns={columns} data={data} />
+          </Paper>
         </Flex>
       </div>
     </div>
